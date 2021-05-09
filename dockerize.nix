@@ -23,7 +23,7 @@ let
       '';
 in
   pkgs.dockerTools.buildImage {
-    name = "smarkets/marge-bot";
+    name = "docker.pkg.github.com/detecttechnologies/marge-bot/docker-marge";
     tag = "${version}";
     contents =
       with pkgs; [
